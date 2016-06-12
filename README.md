@@ -1,11 +1,11 @@
 # Plyr Resolution Selector
-Adds a resolution selector control to the Plyr HTML5 video player to allow users to switch between video qualities.
+Adds a resolution selector control to the [Plyr](https://github.com/Selz/plyr/) HTML5 video player to allow users to switch between video qualities.
 
 <br><br>
 ![Plyr Resolution Switcher](https://cloud.githubusercontent.com/assets/4160975/15988669/caa50800-309c-11e6-9cea-6d01d518fc4e.png)
 
 ##Install
-You can use bower (`bower install plyr-resolution-selector`), npm (`npm install plyr-resolution-selector`), or download the source from this repo. This plugin was built against version 1.8.2 and is untested against previous versions.
+You can use bower (`bower install plyr-resolution-selector`), npm (`npm install plyr-resolution-selector`), or download the source from this repo. This plugin was built against version [1.8.2](https://github.com/Selz/plyr/blob/master/changelog.md) and is untested against previous versions.
 
 ##Usage
 Add an extra attribute to your `<source>` elements.
