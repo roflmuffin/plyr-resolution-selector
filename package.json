@@ -1,0 +1,25 @@
+{
+  "name": "plyr-resolution-selector",
+  "version": "0.0.1",
+  "description": "Adds a resolution selector control to the Plyr HTML5 video player to allow users to switch between video qualities.",
+  "main": "plyr-resolution-selector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roflmuffin/plyr-resolution-selector.git"
+  },
+  "keywords": [
+    "plyr",
+    "resolution",
+    "switcher",
+    "selector"
+  ],
+  "author": "Roflmuffin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roflmuffin/plyr-resolution-selector/issues"
+  },
+  "homepage": "https://github.com/roflmuffin/plyr-resolution-selector#readme"
+}
