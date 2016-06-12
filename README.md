@@ -5,18 +5,18 @@ Adds a resolution selector control to the Plyr HTML5 video player to allow users
 ![Plyr Resolution Switcher](https://cloud.githubusercontent.com/assets/4160975/15988669/caa50800-309c-11e6-9cea-6d01d518fc4e.png)
 
 ##Install
-You can use bower (`bower install plyr-resolution-selector`), npm (`npm install plyr-resolution-selector`), or download the source from this repo. This plugin was built against version 1.6.20 and is untested against previous versions.
+You can use bower (`bower install plyr-resolution-selector`), npm (`npm install plyr-resolution-selector`), or download the source from this repo. This plugin was built against version 1.8.2 and is untested against previous versions.
 
 ##Usage
 Add an extra attribute to your `<source>` elements.
 ```html
 <video>
-	<source res="480" src="..." type="..." />
-	<source res="240" src="..." type="..." />
+  <source res="480" src="..." type="..." />
+  <source res="240" src="..." type="..." />
 </video>
 ```
 
-or in code, simply specify 'res' as an additional property of your video sources. 
+or in code, simply specify 'res' as an additional property of your video sources.
 ```js
 player.source({
   type: 'video',
@@ -37,7 +37,7 @@ player.source({
 Enable the plugin once the `Plyr` has been setup.
 
 ```js
-var player = plyr.setup()[0]
+var player = plyr.setup()[0].plyr
 PlyrResSelector.use(player)
 ```
 
