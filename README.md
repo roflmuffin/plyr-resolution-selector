@@ -16,8 +16,23 @@ Add an extra attribute to your `<source>` elements.
 </video>
 ```
 
-or programmatically 
-
+or in code, simply specify 'res' as an additional property of your video sources. 
+```js
+player.source({
+  type: 'video',
+  title: 'Video Title',
+  sources: [{
+      src: '/path/to/movie.mp4',
+      type: 'video/mp4',
+      res: '480'
+  },
+  {
+      src:    '/path/to/movie.mp4',
+      type: 'video/mp4',
+      res: '720'
+  }]
+});
+```
 
 Enable the plugin once the `Plyr` has been setup.
 
