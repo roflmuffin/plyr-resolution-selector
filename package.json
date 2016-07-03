@@ -1,6 +1,6 @@
 {
   "name": "plyr-resolution-selector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds a resolution selector control to the Plyr HTML5 video player to allow users to switch between video qualities.",
   "main": "plyr-resolution-selector.js",
   "scripts": {

@@ -14,11 +14,17 @@
     var target = matchingTargets[matchingTargets.length-1]
     target.parentNode.insertBefore(qualitySelector, target.nextSibling)
 
+    // Attempt to add selectors as DOM could already be ready.
+    setTimeout(function() {
+      clearSelectorOptions(qualitySelector)
+      addSelectorOptions(player, qualitySelector)
+    }, 1)
+
     // Clear & re-add the <select>'s options once ready (on next tick)
     container.addEventListener('ready', function() {
       setTimeout(function() {
         clearSelectorOptions(qualitySelector)
-        addSelectorOptions(qualitySelector)
+        addSelectorOptions(player, qualitySelector)
       }, 1)
     })
 
@@ -50,9 +56,10 @@
     })
   }
 
-  function addSelectorOptions(selector) {
-    for (var i = 0; i < player.media.childNodes.length; i++) {
-      var res = player.media.childNodes[i].getAttribute('res')
+  function addSelectorOptions(player, selector) {
+    var sources = player.media.getElementsByTagName("source")
+    for (var i = 0; i < sources.length; i++) {
+      var res = sources[i].getAttribute('res')
       if (res != null) {
         var option = document.createElement("option")
         option.innerHTML = res
