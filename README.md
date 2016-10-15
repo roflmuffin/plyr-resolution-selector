@@ -37,7 +37,7 @@ player.source({
 Enable the plugin once the `Plyr` has been setup.
 
 ```js
-var player = plyr.setup()[0].plyr
+var player = plyr.setup()[0]
 PlyrResSelector.use(player)
 ```
 
