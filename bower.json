@@ -1,7 +1,7 @@
 {
   "name": "plyr-resolution-selector",
   "main": "plyr-resolution-selector.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/roflmuffin/plyr-resolution-selector",
   "authors": [
     "Roflmuffin <shortguy014@gmail.com>"
