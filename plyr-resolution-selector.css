@@ -1,4 +1,48 @@
-plyr__resolution {
-  margin-left: 10px;
-  color: #565D64;
+.plyr__resolution {
+    position: relative;
+    display: inline-block;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    overflow: visible;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 9px;
+    border: 0;
+    background: 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .3s ease,color .3s ease,opacity .3s ease;
+    color: inherit;
+    margin-left: 10px;
+
+}
+.plyr__resolution:hover {
+    background: #3498db;
+    color: #fff;
+}
+.plyr__resolution_options {
+	display: none;
+}
+.plyr__resolution_options.show {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black;
+	border-radius: 3px;
+}
+.plyr__resolution_option{
+    font-size: 14px;
+    padding: 9px;
+    border: 0;
+    border-radius: 3px;
+}
+.plyr__resolution_option:hover {
+    background: #3498db;
+    color: #fff;
+}
+.plyr__resolution_option.active{
+    background: #3498db;
+    color: #fff;
+    border-radius: 3px;
 }
