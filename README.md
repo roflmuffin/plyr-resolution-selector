@@ -4,10 +4,10 @@ Adds a resolution selector control to the [Plyr](https://github.com/Selz/plyr/) 
 <br><br>
 ![Plyr Resolution Switcher](https://cloud.githubusercontent.com/assets/4160975/15988669/caa50800-309c-11e6-9cea-6d01d518fc4e.png)
 
-##Install
+## Install
 You can use bower (`bower install plyr-resolution-selector`), npm (`npm install plyr-resolution-selector`), or download the source from this repo. This plugin was built against version [1.8.2](https://github.com/Selz/plyr/blob/master/changelog.md) and is untested against previous versions.
 
-##Usage
+## Usage
 Add an extra attribute to your `<source>` elements.
 ```html
 <video>
@@ -51,5 +51,5 @@ or even
 PlyrResSelector.use(player, '[data-plyr="mute"]')
 ```
 
-##Styling the select
+## Styling the select
  The plugin does not include any styling apart from changing the font color & margin, so the select will appear in the browsers default style. The element has the classname `plyr__resolution` in a similar fashion to other Plyr control, so simply target this classname to restyle.
